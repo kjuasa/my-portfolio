@@ -125,18 +125,15 @@ h3.passion{
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
+
 img.project_img{
     background: #000;
     width: 100%;
     border: 3px #444 solid;
 }
 img.project_img:hover{
-    opacity: 0.5;
+    opacity: 0.4;
     transform: translateY(-5px);
-}
-img.project_img a:hover{
-    opacity: 0.5;
-    border-color: #eece1a;
     transition: ease-in-out 0.5s;
 }
 
@@ -223,6 +220,10 @@ div.boxes{
     color: #fff;
     cursor: pointer;
 }
+textarea.form-control {
+    height: 300px !important;
+}
+
 .btnContactSubmit
 {
     width: 50%;
@@ -241,6 +242,9 @@ div.boxes{
 
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
+     body{
+         font-size: 16px;
+     }
      
     h1.lg-heading{
         font-size: 3.7rem;
@@ -254,10 +258,19 @@ div.boxes{
     h3.ability{
         font-size: 1.5rem;
     }
+    .projects .item{
+        font-size: 11.5px;
+    }
     img.img-user{
         width: 64%;
         height: 64%;
         margin: 12% 0 0 15%;
+    }
+    .contact-form .btnContact{
+        width: 100%;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.5%;
     }
     .social{
         padding: 0 9rem 0 9rem;
@@ -284,6 +297,12 @@ div.boxes{
         height: 64%;
         margin: 12% 0 0 15%;
     }
+    .contact-form .btnContact{
+        width: 100%;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.5%;
+    }
     .social{
         padding: 0 100px 0 100px;
      }
@@ -307,8 +326,8 @@ div.boxes{
 
     img.img-user{
         width: 79%;
-        height: 49%;
-        margin: 12% 0 0 15%;
+        height: 70%;
+        margin: 15% 0 0 15%;
     }
  }
  
@@ -316,7 +335,7 @@ div.boxes{
  @media only screen and (min-width: 1200px) {
     img.img-user{
         width: 69%;
-        height: 61%;
+        height: 69%;
         margin: 12% 0 0 15%;
     }
  } 
